@@ -7,11 +7,10 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-        moveObjects: (mousePosition) => {
-            dispatch(moveObjects(mousePosition));
-        },
-    }
-);
+    moveObjects: (mousePosition) => {
+        dispatch(moveObjects(mousePosition));
+    },
+});
 
 const Game = connect(
     mapStateToProps,
